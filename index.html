@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyReads</title>
+<link rel="icon" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css" rel="stylesheet">
+<style>
+  body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #F4F1EA;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  }
+  h1, h2, h3 {
+  color: #A52A2A;
+  }
+  a {
+  color: #000000;
+  text-decoration: none;
+    }
+    a:hover {
+      color: #A52A2A;
+      text-decoration: underline;
+    }
+    button {
+      background-color: #A52A2A;
+      color: #FFFFFF;
+      border: 2px solid #A52A2A;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      color: #800080;
+      border-color: #800080;
+    }
+    .book {
+      box-shadow: 0 4px 8px rgba(119, 136, 153, 0.5);
+      margin-bottom: 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .book img {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      margin: 0 15px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      padding: 8px;
+      margin-right: 10px;
+    }
+    footer {
+      background-color: #F4F1EA;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    footer section {
+      width: 45%;
+      margin: 10px 0;
+    }
+    footer .contact-icons i {
+      margin: 0 10px;
+    }
+
+@media (min-width: 1024px) {
+      .book-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .book {
+        flex: 1;
+        margin: 0 10px;
+        text-align: left;
+      }
+      .book img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .search-bar {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      .book-container {
+        display: block;
+      }
+      .book {
+        margin: 20px 0;
+        text-align: center;
+      }
+      .book img {
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <h1>MyReads</h1>
+  <nav>
+  <a href="#">Home</a>
+  <a href="#">My Books</a>
+  <a href="#">Browse</a>
+  <a href="#">Community</a>
+  </nav>
+  <div class="search-bar">
+  <input type="text" placeholder="Search for a book title">
+  <button><i class="fas fa-search"></i></button>
+  </div>
+  </header>
+
+  <main>
+  <h2>Non-Fiction</h2>
+  <div class="book-container">
+
+  <div class="book">
+  <h3>The Light We Carry</h3>
+  <p>Author: Michelle Obama</p>
+  <p>When they go low, you write another book. In an inspiring follow-up to her bestselling memoir Becoming, the former First Lady of the United States shares practical wisdom and powerful strategies for staying hopeful and balanced through difficult times.</p>
+  <button>Add to Library</button>
+  <img src="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-1.png" alt="The Light We Carry">
+  </div>
+      
+      
+  <div class="book">
+  <h3>Visual Thinking</h3>
+  <p>Author: Temple Grandin</p>
+  <p>Twenty-five years ago, author and educator Temple Grandin changed mainstream understanding of autism with her memoir, Thinking in Pictures. Her new book expands on the theme, celebrating visual/spatial cognition, intuitive design, and the critical importance of those who think differently. In fact, Grandin argues persuasively that today's problems require neurodiverse thinking.</p>
+  <button>Add to Library</button>
+  <img src="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-2.png" alt="Visual Thinking">
+  </div>
+  </div>
+  </main>
+
+  <footer>
+  <section>
+  <h3>COMPANY</h3>
+  <nav>
+  <a href="#">About Us</a>
+  <a href="#">Terms of Use</a>
+  <a href="#">Privacy</a>
+  </nav>
+  </section>
+
+  <section class="contact-icons">
+  <h3>CONNECT</h3>
+  <i class="fas fa-phone"></i> Phone<br>
+  <i class="fas fa-mobile-alt"></i> Mobile<br>
+  <i class="fas fa-envelope"></i> Mail<br>
+  <i class="fas fa-rss"></i> RSS<br>
+  <i class="fas fa-walking"></i> Directions
+  </section>
+  </footer>
+
+</body>
+</html>
+
+
